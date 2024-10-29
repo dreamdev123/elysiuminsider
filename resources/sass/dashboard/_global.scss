@@ -1,0 +1,51 @@
+body {
+    font-family: 'DIN Pro Condensed Regular', sans-serif;
+    color: #41464d;
+}
+
+hr {
+    width: 100%;
+}
+
+.bg-green {
+    background-color: $green !important;
+}
+
+.bg-blue {
+    background-color: $blue !important;
+}
+
+.bg-yellow {
+  background-color: #C8AC57 !important;
+}
+
+.euro-sign {
+    font-family: 'Kulim Park SemiBold', sans-serif !important;
+}
+
+.amounts {
+    font-family: 'DIN Pro Bold', sans-serif !important;
+}
+
+.table-hover tbody tr:hover {
+    color: #212529;
+    background-color: #f9f9f9;
+}
+
+.page-item.active .page-link {
+    color: #fff;
+    background-color: #00a9e0;
+    border-color: #00a9e0;
+}
+
+.page-link:hover {
+    color: #00a9e0;
+}
+
+.main-content {
+    padding-top: 50px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

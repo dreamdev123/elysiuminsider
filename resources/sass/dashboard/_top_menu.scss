@@ -1,0 +1,113 @@
+.navbar-top {
+    background-color: #101820;
+    .nav-link {
+        color: #fff;
+    }
+    .fa-user-alt {
+        font-size: 20px;
+        margin: 2px 0;
+    }
+    .img-avatar {
+        height: 32px;
+    }
+    .headerNotificationsBox{
+        margin-right: 30px;
+        .notItemBox{
+            position: relative;
+            font-size: 24px;
+            display: inline-block;
+            color: #ffffff;
+            margin-left: 30px;
+            cursor: pointer;
+            .notCount{
+                position: absolute;
+                right: -8px;
+                top: 0;
+                font-size: 14px;
+                background-color: #08b790;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .customSelect, .customSelectCurrency{
+        background-color: #686d72;
+        .dropdown-toggle{
+            padding: 3px 15px;
+            color: #ffffff;
+            .caret{
+                margin-left: 10px;
+            }
+            &::after{
+                display: none;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            img{
+                height: 22px;
+                margin-right: 5px;
+            }
+        }
+        .dropdown-menu{
+            padding: 0;
+            border: none;
+            border-radius: 0;
+            margin-top: 5px;
+            li.dropdown-item{
+                padding: 0;
+                a{
+                    display: block;
+                    color: #ffffff;
+                    background-color: rgb(104, 109, 114);
+                    padding: 2px 15px;
+                    text-decoration: none;
+                    img{
+                        height: 22px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .customSelectCurrency{
+        margin-right: 20px;
+        .dropdown-toggle{
+            span{
+                width: 15px;
+                display: inline-block;
+            }
+        }
+        .dropdown-menu{
+            li.dropdown-item{
+                a{
+                    span{
+                        width: 15px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    .slideBar{
+        width: 25px;
+        margin-left: 25px;
+        cursor: pointer;
+        span{
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: #686d72;
+            margin-bottom: 5px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

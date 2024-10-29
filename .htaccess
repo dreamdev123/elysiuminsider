@@ -1,0 +1,21 @@
+# BEGIN
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+RewriteCond %{HTTP_HOST} ^elysiuminsider.io [NC]
+RewriteRule ^(.*)$ https://www.elysiuminsider.io/$1 [L,R=301,NC]
+</IfModule>
+
+# Disable Directory listing
+Options -Indexes
+
+# block files which needs to be hidden, specify .example extension of the file
+<Files ~ "\.(env|env.example|json|config.js|md|gitignore|gitattributes|lock)$">
+    Order allow,deny
+    Deny from all
+</Files>
+# END
